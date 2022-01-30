@@ -43,6 +43,9 @@ class TestBaseModel_instatiation(unittest.TestCase):
     def test_no_args_instatiation(Self):
         self.assertEqual(BaseModel, type(BaseModel()))
 
+    def test_new_instance_stored_in_objects(self):
+        self.assertIn(BaseModel(), models.storage.all().values())
+
     def test_created_at_is_datetime(self):
         new_model1 = BaseModel()
         new_model2 = BaseModel()
@@ -93,6 +96,24 @@ class TestBaseModel_instatiation(unittest.TestCase):
 
 class TestBaseModel_save(unittest.TestCase):
     """ Unittests for testing the save method of the BaseModel class"""
+
+    @classmethod
+    def setUp(self):
+        try:
+            os.rename("file.json", "tmp")
+        except IOError:
+            pass
+
+    @classmethod
+    def tearDown(self):
+        try:
+            os.remove("file.json")
+        except IOError:
+            pass
+        try:
+            os.rename("tmp", "file.json")
+        except IOError:
+            pass
 
     def test_save(self):
         nm = BaseModel()
