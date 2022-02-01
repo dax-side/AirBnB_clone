@@ -51,7 +51,7 @@ class HBNBCommand(cmd.Cmd):
         args = check_input(arg)
         if args is not None:
             if len(args) == 1:
-                print(" ** instance id missing **")
+                print("** instance id missing **")
             else:
                 key = "BaseModel." + args[1]
                 check_key(key, cmd="destroy")
@@ -79,10 +79,12 @@ class HBNBCommand(cmd.Cmd):
             else:
                 key = "BaseModel." + args[1]
                 obj = check_key(key, cmd="update")
-                if len(args) < 3:
+                if len(args) == 2:
                     print("** attribute name missing **")
-                elif len(args) < 4:
+                    return False
+                elif len(args) == 3:
                     print("** value missing **")
+                    return False
                 else:
                     if args[2] in obj.__dict__.keys():
                         vtype = type(obj.__dict__[args[2]])
