@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Defines the HBnB console."""
+"""Defines the hbtn console."""
 import cmd
+import models
 import re
 from shlex import split
-from models import storage
 from models.base_model import BaseModel
 from models.user import User
 from models.state import State
@@ -13,26 +13,8 @@ from models.amenity import Amenity
 from models.review import Review
 
 
-def parse(arg):
-    curly_braces = re.search(r"\{(.*?)\}", arg)
-    brackets = re.search(r"\[(.*?)\]", arg)
-    if curly_braces is None:
-        if brackets is None:
-            return [i.strip(",") for i in split(arg)]
-        else:
-            lexer = split(arg[:brackets.span()[0]])
-            retl = [i.strip(",") for i in lexer]
-            retl.append(brackets.group())
-            return retl
-    else:
-        lexer = split(arg[:curly_braces.span()[0]])
-        retl = [i.strip(",") for i in lexer]
-        retl.append(curly_braces.group())
-        return retl
-
-
 class HBNBCommand(cmd.Cmd):
-    """Defines the HolbertonBnB command interpreter.
+    """Defines the command interpreter.
 
     Attributes:
         prompt (str): The command prompt.
@@ -50,11 +32,18 @@ class HBNBCommand(cmd.Cmd):
     }
 
     def emptyline(self):
-        """Do nothing upon receiving an empty line."""
+        """overides the default behavir of the emptyline method
+            of repeating the last nonempty command entered
+            it does nothing upon receiving an empty line.
+        """
         pass
 
     def default(self, arg):
-        """Default behavior for cmd module when input is invalid"""
+        """Overides the default behaviour of prinint and error
+            message when called on an input line when the command is
+            not recognized
+            Default behavior for cmd module when input is invalid
+        """
         argdict = {
             "all": self.do_all,
             "show": self.do_show,
@@ -76,12 +65,12 @@ class HBNBCommand(cmd.Cmd):
 
     def do_quit(self, arg):
         """Quit command to exit the program."""
-        return True
+        exit()
 
     def do_EOF(self, arg):
         """EOF signal to exit the program."""
         print("")
-        return True
+        exit()
 
     def do_create(self, arg):
         """Usage: create <class>
@@ -94,14 +83,14 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
         else:
             print(eval(argl[0])().id)
-            storage.save()
+            models.storage.save()
 
     def do_show(self, arg):
         """Usage: show <class> <id> or <class>.show(<id>)
         Display the string representation of a class instance of a given id.
         """
         argl = parse(arg)
-        objdict = storage.all()
+        objdict = models.storage.all()
         if len(argl) == 0:
             print("** class name missing **")
         elif argl[0] not in HBNBCommand.__classes:
@@ -117,7 +106,7 @@ class HBNBCommand(cmd.Cmd):
         """Usage: destroy <class> <id> or <class>.destroy(<id>)
         Delete a class instance of a given id."""
         argl = parse(arg)
-        objdict = storage.all()
+        objdict = models.storage.all()
         if len(argl) == 0:
             print("** class name missing **")
         elif argl[0] not in HBNBCommand.__classes:
@@ -128,7 +117,7 @@ class HBNBCommand(cmd.Cmd):
             print("** no instance found **")
         else:
             del objdict["{}.{}".format(argl[0], argl[1])]
-            storage.save()
+            models.storage.save()
 
     def do_all(self, arg):
         """Usage: all or all <class> or <class>.all()
@@ -139,7 +128,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
         else:
             objl = []
-            for obj in storage.all().values():
+            for obj in models.storage.all().values():
                 if len(argl) > 0 and argl[0] == obj.__class__.__name__:
                     objl.append(obj.__str__())
                 elif len(argl) == 0:
@@ -151,7 +140,7 @@ class HBNBCommand(cmd.Cmd):
         Retrieve the number of instances of a given class."""
         argl = parse(arg)
         count = 0
-        for obj in storage.all().values():
+        for obj in models.storage.all().values():
             if argl[0] == obj.__class__.__name__:
                 count += 1
         print(count)
@@ -163,7 +152,7 @@ class HBNBCommand(cmd.Cmd):
         Update a class instance of a given id by adding or updating
         a given attribute key/value pair or dictionary."""
         argl = parse(arg)
-        objdict = storage.all()
+        objdict = models.storage.all()
 
         if len(argl) == 0:
             print("** class name missing **")
@@ -190,8 +179,8 @@ class HBNBCommand(cmd.Cmd):
         if len(argl) == 4:
             obj = objdict["{}.{}".format(argl[0], argl[1])]
             if argl[2] in obj.__class__.__dict__.keys():
-                valtype = type(obj.__class__.__dict__[argl[2]])
-                obj.__dict__[argl[2]] = valtype(argl[3])
+                vtype = type(obj.__class__.__dict__[argl[2]])
+                obj.__dict__[argl[2]] = vtype(argl[3])
             else:
                 obj.__dict__[argl[2]] = argl[3]
         elif type(eval(argl[2])) == dict:
@@ -199,11 +188,30 @@ class HBNBCommand(cmd.Cmd):
             for k, v in eval(argl[2]).items():
                 if (k in obj.__class__.__dict__.keys() and
                         type(obj.__class__.__dict__[k]) in {str, int, float}):
-                    valtype = type(obj.__class__.__dict__[k])
-                    obj.__dict__[k] = valtype(v)
+                    vtype = type(obj.__class__.__dict__[k])
+                    obj.__dict__[k] = vtype(v)
                 else:
                     obj.__dict__[k] = v
-        storage.save()
+        models.storage.save()
+
+
+def parse(arg):
+    """Convert argument passed on terminal to a list/dict"""
+    braces = re.search(r"\{(.*?)\}", arg)
+    brackets = re.search(r"\[(.*?)\]", arg)
+    if braces is None:
+        if brackets is None:
+            return [i.strip(",") for i in split(arg)]
+        else:
+            ls = split(arg[:brackets.span()[0]])
+            argl = [i.strip(",") for i in ls]
+            argl.append(brackets.group())
+            return agrl
+    else:
+        ls = split(arg[:braces.span()[0]])
+        argl = [i.strip(",") for i in ls]
+        argl.append(braces.group())
+        return argl
 
 
 if __name__ == "__main__":
