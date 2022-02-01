@@ -16,6 +16,15 @@ from models.review import Review
 class HBNBCommand(cmd.Cmd):
     """ Entry point to the command interpreter"""
     prompt = "(hbnb) "
+    __classes__ = {
+            "BaseModel",
+            "User",
+            "State",
+            "City",
+            "Place",
+            "Amenity",
+            "Review"
+            }
 
     def do_EOF(self, arg):
         '''EOF signal to exit the program'''
