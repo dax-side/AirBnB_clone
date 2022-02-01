@@ -118,6 +118,7 @@ def check_key(key, **kwargs):
             return obj
     except KeyError:
         print("** no instance found **")
+        return False
 
 
 if __name__ == "__main__":
