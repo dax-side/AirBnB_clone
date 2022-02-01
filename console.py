@@ -92,7 +92,7 @@ class HBNBCommand(cmd.Cmd):
                     else:
                         obj.__dict__[args[2]] = args[3].strip('"')
                 models.storage.save()
-                        
+
 
 def check_input(arg, **kwargs):
     """ Check if class name is given and it exists """
@@ -103,6 +103,7 @@ def check_input(arg, **kwargs):
         print("** class doesn't exist **")
     else:
         return args
+
 
 def check_key(key, **kwargs):
     """ checks whether the id exists """
