@@ -64,9 +64,9 @@ CSS is the styling of the page, the design.
 	<li>No inline styling</li>
 	<li>Use 3 CSS files:	
 		<ul>
-			<li><a href="./styles/2-common.css">styles/2-common.css:</a>for global style(i.e. the body style)</li>
-			<li><a href="./styles/2-header.css">styles/2-header.css:</a>for header style</li>
-			<li><a href="./styles/2-footer.css">styles/2-footer.css:</a>for foter style</li>
+			<li><a href="./styles/2-common.css">styles/2-common.css: </a>for global style(i.e. the body style)</li>
+			<li><a href="./styles/2-header.css">styles/2-header.css: </a>for header style</li>
+			<li><a href="./styles/2-footer.css">styles/2-footer.css: </a>for footer style</li>
 		</ul>
 
 	</li>
