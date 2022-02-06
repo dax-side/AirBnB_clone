@@ -73,7 +73,7 @@ CSS is the styling of the page, the design.
 
 ## Task 3
 * **Zoning done!**
-[3-index.html](./3-index.html): HTML page that displays a header and footer bu using CSS files (same as `2-index.html`)
+[3-index.html](./3-index.html): HTML page that displays a header and footer by using CSS files (same as `2-index.html`)
 <h2>Layout</h2>
 <ul>
 	<li>Common:
