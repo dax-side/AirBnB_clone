@@ -40,6 +40,6 @@ CSS is the styling of the page, the design.
 <ul>
 <li>Use the <b>header</b> and <b>footer</b> tags</li>
 <li>Importing any files is not allowed</li>
-<li>Use of the <b>style</b> tag and in the <b>head</b> tag not allowed</li>
+<li>Use of the <b>style</b> tag in the <b>head</b> tag is not allowed</li>
 <li>Inline styling should be used for all tags</li>
 </ul>
