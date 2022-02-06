@@ -42,6 +42,7 @@ CSS is the styling of the page, the design.
 	<li>Importing any files is not allowed</li>
 	<li>Use of the <b>style</b> tag in the <b>head</b> tag is not allowed</li>
 	<li>Inline styling should be used for all tags</li>
+	<li>Must be W3C valid</li>
 </ul>
 
 ## Task 1
@@ -67,6 +68,7 @@ CSS is the styling of the page, the design.
 			<li><a href="./styles/2-common.css">styles/2-common.css: </a>for global style(i.e. the body style)</li>
 			<li><a href="./styles/2-header.css">styles/2-header.css: </a>for header style</li>
 			<li><a href="./styles/2-footer.css">styles/2-footer.css: </a>for footer style</li>
+			<li>Must be W3C valid</li>
 		</ul>
 	</li>
 </ul>
@@ -117,6 +119,69 @@ CSS is the styling of the page, the design.
 			<li><a href="./styles/3-common.css">styles/3-common.css: </a>for global style(i.e. the body style)</li>
 			<li><a href="./styles/3-header.css">styles/3-header.css: </a>for header style</li>
 			<li><a href="./styles/3-footer.css">styles/3-footer.css: </a>for footer style</li>
+			<li>Must be W3C valid</li>
 		</ul>
 	</li>
+</ul>
+
+## Task 4
+* **Search**
+[4-index.html](./4-index.html): HTML page that displays a header, footer and a filters box with a search button.
+<h2>Layout</h2>
+<p>Based on 3-index.html</p>
+<ul>
+	<li>Container:
+		<ul>
+			<li>between header and footer tags, add a div: 
+				<ul>
+					<li>classname: container</li>
+					<li>max width: 1000px</li>
+					<li>margin top and bottom 30px</li>
+					<li>center horizontally</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li> Filter section:
+		<ul>
+			<li>tag section</li>
+			<li>classname: filters</li>
+			<li>inside the.container</li>
+			<li>color: white</li>
+			<li>height: 70px</li>
+			<li>width: 100% of the container</li>
+			<li>border: 1px solid #DDDDDD with radius 4px</li>
+		</ul>
+	</li>
+	<li> Button Search:
+		<ul>	
+			<li>tag button</li>
+			<li>text search</li>
+			<li>font size: 18px</li>
+			<li>inside the section filters</li>
+			<li>background color #FF5A5F</li>
+			<li>text color #FFFFFF</li>
+			<li>height: 48px</li>
+			<li>width: 20% of the section filters</li>
+			<li>no borders</li>
+			<li>border radius: 4px</li>
+			<li>center vertically and at 30px of the right border</li>
+			<li>change opacity to 90% when the mouse is on the button</li>
+		</ul>
+	</li>
+</ul>
+<h3>Reuirements</h3>
+<ul>
+	<li>Use the: header, footer, section, button tags</li>
+	<li>No inline style</li>
+	<li>img tag is not allowed</li>
+	<li>Use of the style tag in the head tag not allowed</li>
+	<li>All images must be stored in the images folder</li>
+	<li>Use 4 CSS files:
+		<ul>
+			<li><a href="./styles/4-common.css">styles/4-common.css: </a>for global style(i.e. the body and .container styles)</li>
+			<li><a href="./styles/4-header.css">styles/4-header.css: </a>for header style</li>
+			<li><a href="./styles/4-footer.css">styles/4-footer.css: </a>for footer style</li>
+			<li><a href="./styles/4-filters.css">styles/4-filters.css: </a>for filters style</li>
+			<li>Not W3C valid</li>
 </ul>
