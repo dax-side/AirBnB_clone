@@ -36,10 +36,22 @@ CSS is the styling of the page, the design.
 	</ul>
 </li>
 </ul>
-<h2>Requirements</h2>
+<h2>Requirements:</h2>
 <ul>
-<li>Use the <b>header</b> and <b>footer</b> tags</li>
-<li>Importing any files is not allowed</li>
-<li>Use of the <b>style</b> tag in the <b>head</b> tag is not allowed</li>
-<li>Inline styling should be used for all tags</li>
+	<li>Use the <b>header</b> and <b>footer</b> tags</li>
+	<li>Importing any files is not allowed</li>
+	<li>Use of the <b>style</b> tag in the <b>head</b> tag is not allowed</li>
+	<li>Inline styling should be used for all tags</li>
 </ul>
+
+* **1. Head styling**
+[1-index.html](./1-index.html): HTML page that displays a header and footer by using the `style` tag in the `head` tag (same as `0-index.html`)
+<h2>Requirements:</h2>
+<ul>
+	<li>Use the <b>header</b> and <b>footer</b> tags</li>
+	<li>Importing any files is not allowed</li>
+	<li>No inline styling</li>
+	<li>The <b>style</b> tag must be used in the <b>head</b> tag </li>
+</ul>
+
+
