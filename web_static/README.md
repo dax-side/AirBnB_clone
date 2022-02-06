@@ -13,18 +13,18 @@ CSS is the styling of the page, the design.
 [0-index.html](./0-index/html): HTML page that displays a header and footer.
 <h3>Layout</h3>
 <ul>
-<li>Body
-<ul>
-<li>no margin</li>
-<li>no padding</li>
-</ul>
-</li>
+	<li>Body
+		<ul>
+			<li>no margin</li>
+			<li>no padding</li>
+		</ul>
+	</li>
 <li>Header
-<ul>
-<li>color #FF0000 (red)</li>
-<li>height: 70px</li>
-<li>width: 100%</li>
-</ul>
+	<ul>
+		<li>color #FF0000 (red)</li>
+		<li>height: 70px</li>
+		<li>width: 100%</li>
+	</ul>
 </li>
 <li>Footer
 	<ul>
