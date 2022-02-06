@@ -101,7 +101,7 @@ CSS is the styling of the page, the design.
 			<li>height: 60px</li>
 			<li>width: 100%</li>
 			<li>border top 1px #CCCCCC</li>
-			<li>text <b>Best School></b> center vertically and horizontally</li>
+			<li>text <b>Best School</b> center vertically and horizontally</li>
 			<li>always at the bottom of the page</li>
 		</ul>
 	</li>
