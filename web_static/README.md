@@ -24,7 +24,7 @@ CSS is the styling of the page, the design.
 <p>color #00FF00 (green)</p>
 <p>height: 60px</p>
 <p>width: 100%</p>
-<p>text `Best School` center vertically and horizontally</p>
+<p>text <b>Best School</> center vertically and horizontally</p>
 <p>always at the bottom of the page</p>
 </ul>
 <h2>Requirements</h2>
