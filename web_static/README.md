@@ -45,7 +45,6 @@ CSS is the styling of the page, the design.
 </ul>
 
 ## Task 1
-
 * **Head styling**
 [1-index.html](./1-index.html): HTML page that displays a header and footer by using the `style` tag in the `head` tag (same as `0-index.html`)
 <h3>Requirements:</h3>
@@ -56,4 +55,19 @@ CSS is the styling of the page, the design.
 	<li>The <b>style</b> tag must be used in the <b>head</b> tag </li>
 </ul>
 
+## Task 2
+* **CSS files**
+[2-index.html](./2-index.html): HTML page that displays a header and footer by using CSS files (same as `1-index.html`)
+<h3>Requirements</h3>
+<ul>
+	<li>Use the <b>header</b> and <b>footer</b> tags</li>
+	<li>No inline styling</li>
+	<li>Use 3 CSS files:	
+		<ul>
+			<li><a href="./styles/2-common.css">styles/2-common.css:</a></li>for global style(i.e. the body style)
+			<li><a href="./styles/2-header.css">styles/2-header.css:</a></li>for header style
+			<li><a href="./styles/2-footer.css">styles/2-footer.css:</a></li>for foter style
+		</ul>
 
+	<li>
+</ul>
