@@ -132,11 +132,11 @@ CSS is the styling of the page, the design.
 <ul>
 	<li>Container:
 		<ul>
-			<li>between header and footer tags, add a div: 
+			<li>between <span style="color:red">header</span> and <span style="color:red">footer</span> tags, add a <span style="color:red">div</span>: 
 				<ul>
-					<li>classname: container</li>
+					<li>classname: <span style ="color:red">container</span></li>
 					<li>max width: 1000px</li>
-					<li>margin top and bottom 30px</li>
+					<li>margin top and bottom 30px- should be 30px under the bottom of the <span style="color:red">header</span></li>
 					<li>center horizontally</li>
 				</ul>
 			</li>
@@ -144,9 +144,9 @@ CSS is the styling of the page, the design.
 	</li>
 	<li> Filter section:
 		<ul>
-			<li>tag section</li>
-			<li>classname: filters</li>
-			<li>inside the.container</li>
+			<li>tag <span style="color:red">section</span></li>
+			<li>classname: <span style="color:red">filters</span></li>
+			<li>inside the <span style="color:red">.container</li>
 			<li>color: white</li>
 			<li>height: 70px</li>
 			<li>width: 100% of the container</li>
@@ -155,8 +155,8 @@ CSS is the styling of the page, the design.
 	</li>
 	<li> Button Search:
 		<ul>	
-			<li>tag button</li>
-			<li>text search</li>
+			<li>tag <span style="color:red">button</span></li>
+			<li>text <span style="color:red">search</span></li>
 			<li>font size: 18px</li>
 			<li>inside the section filters</li>
 			<li>background color #FF5A5F</li>
