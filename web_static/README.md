@@ -8,8 +8,8 @@ The first step is to `design`/ `sketch`/`protoytpe`each element:
 - No data loaded from anything
 During this project, I will learn how to manipulate HTML and CSS. HTML is the structure of the page.
 CSS is the styling of the page, the design.
-## Tasks
-* **0. Inline styling**
+## Task 0
+* **Inline styling**
 [0-index.html](./0-index/html): HTML page that displays a header and footer.
 <h3>Layout</h3>
 <ul>
@@ -44,7 +44,9 @@ CSS is the styling of the page, the design.
 	<li>Inline styling should be used for all tags</li>
 </ul>
 
-* **1. Head styling**
+## Task 1
+
+* **Head styling**
 [1-index.html](./1-index.html): HTML page that displays a header and footer by using the `style` tag in the `head` tag (same as `0-index.html`)
 <h2>Requirements:</h2>
 <ul>
