@@ -128,7 +128,7 @@ CSS is the styling of the page, the design.
 * **Search**
 [4-index.html](./4-index.html): HTML page that displays a header, footer and a filters box with a search button.
 <h2>Layout</h2>
-<p>Based on [3-index.html](./3-index.html)</p>
+Based on <a href="./3-index.html">3-index.html</a>
 <ul>
 	<li>Container:
 		<ul>
@@ -188,9 +188,9 @@ CSS is the styling of the page, the design.
 
 ## Task 5
 * **More filters**
-[4-index.html](./4-index.html): HTML page that displays a header, footer and a filters box.
+[5-index.html](./5-index.html): HTML page that displays a header, footer and a filters box.
 <h2>Layout</h2>
-<p>Based on [4-index.html](./4-index.html)</p>
+Based on <a href="./4-index.html">4-index.html</a>
 <ul>
 	<li>Location and Amenities filters:
 		<ul>
@@ -238,7 +238,7 @@ CSS is the styling of the page, the design.
 * **It's (h)over**
 [6-index.html](./6-index.html): HTML page that displays a header, footer and a filters box with a search button.
 <h2>Layout</h2>
-Based on [5-index.html](./5-index.html)
+Based on <a href="./5-index.html">5-index.html</a>
 <ul>
 	<li> Update Locations and Amenities filters to displaty a contextual dropdown when the mouse is on the filter div:
 		<ul>	
@@ -280,7 +280,7 @@ Based on [5-index.html](./5-index.html)
 * **Display results**
 [7-index.html](./7-index.html): HTML page that displays a header, footer, a filters box with dropdown and results.
 <h2>Layout</h2>
-Based on [6-index.html](./6-index.html)
+Based on <a href="./6-index.html">6-index.html</a>
 <ul>
 	<li>Add Places section:
 		<ul>
