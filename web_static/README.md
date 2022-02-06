@@ -284,10 +284,10 @@ Based on [6-index.html](./6-index.html)
 <ul>
 	<li>Add Places section:
 		<ul>
-			<li>tag section</li>: 
-			<li>classname: places</li>: 
-			<li>same level as filters section, inside .containers</li>: 
-			<li>contains title: 
+			<li>tag section</li>
+			<li>classname: places</li> 
+			<li>same level as filters section, inside .containers</li>
+			<li>contains title
 				<ul>
 					<li>tag: h1</li>
 					<li>text: places</li>
