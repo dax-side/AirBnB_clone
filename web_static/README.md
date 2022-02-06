@@ -295,7 +295,7 @@ Based on [6-index.html](./6-index.html)
 					<li>font size: 30px</li>
 				</ul>
 			</li>
-			<li>contains multiple "Places" as listing (horizontal or vertical) describe by:</li>: 
+			<li>contains multiple "Places" as listing (horizontal or vertical) describe by: 
 				<ul>
 					<li>tag: article</li>
 					<li>width: 390px</li>
@@ -309,6 +309,7 @@ Based on [6-index.html](./6-index.html)
 						</ul>		
 					</li>
 				</ul>
+			</li>
 		</ul>
 	</li>
 </ul>
