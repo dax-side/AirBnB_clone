@@ -106,7 +106,7 @@ CSS is the styling of the page, the design.
 		</ul>
 	</li>
 </ul>
-<h3>Requirements<h3>
+<h3>Requirements</h3>
 <ul>
 	<li>No inline styling</li>
 	<li>Use of the <b>img</b> tag is not allowed</li>
