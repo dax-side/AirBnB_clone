@@ -42,7 +42,7 @@ CSS is the styling of the page, the design.
 	<li>Importing any files is not allowed</li>
 	<li>Use of the <b>style</b> tag in the <b>head</b> tag is not allowed</li>
 	<li>Inline styling should be used for all tags</li>
-	<li>Must be W3C valid</li>
+	<li>Must be <a href="https://github.com/holbertonschool/W3C-Validator">W3C valid</a></li>
 </ul>
 
 ## Task 1
@@ -68,7 +68,7 @@ CSS is the styling of the page, the design.
 			<li><a href="./styles/2-common.css">styles/2-common.css: </a>for global style(i.e. the body style)</li>
 			<li><a href="./styles/2-header.css">styles/2-header.css: </a>for header style</li>
 			<li><a href="./styles/2-footer.css">styles/2-footer.css: </a>for footer style</li>
-			<li>Must be W3C valid</li>
+			<li>Must be <a href="https://github.com/holbertonschool/W3C-Validator">W3C valid</a></li>
 		</ul>
 	</li>
 </ul>
@@ -119,7 +119,7 @@ CSS is the styling of the page, the design.
 			<li><a href="./styles/3-common.css">styles/3-common.css: </a>for global style(i.e. the body style)</li>
 			<li><a href="./styles/3-header.css">styles/3-header.css: </a>for header style</li>
 			<li><a href="./styles/3-footer.css">styles/3-footer.css: </a>for footer style</li>
-			<li>Must be W3C valid</li>
+			<li>Must be <a href="https://github.com/holbertonschool/W3C-Validator">W3C valid</a></li>
 		</ul>
 	</li>
 </ul>
@@ -183,5 +183,5 @@ CSS is the styling of the page, the design.
 			<li><a href="./styles/4-header.css">styles/4-header.css: </a>for header style</li>
 			<li><a href="./styles/4-footer.css">styles/4-footer.css: </a>for footer style</li>
 			<li><a href="./styles/4-filters.css">styles/4-filters.css: </a>for filters style</li>
-			<li>Not W3C valid</li>
+			<li>Not <a href="https://github.com/holbertonschool/W3C-Validator">W3C valid</a></li>
 </ul>
