@@ -68,6 +68,5 @@ CSS is the styling of the page, the design.
 			<li><a href="./styles/2-header.css">styles/2-header.css: </a>for header style</li>
 			<li><a href="./styles/2-footer.css">styles/2-footer.css: </a>for footer style</li>
 		</ul>
-
 	</li>
 </ul>
