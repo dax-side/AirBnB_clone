@@ -36,7 +36,7 @@ CSS is the styling of the page, the design.
 	</ul>
 </li>
 </ul>
-<h2>Requirements:</h2>
+<h3>Requirements:</h3>
 <ul>
 	<li>Use the <b>header</b> and <b>footer</b> tags</li>
 	<li>Importing any files is not allowed</li>
@@ -48,7 +48,7 @@ CSS is the styling of the page, the design.
 
 * **Head styling**
 [1-index.html](./1-index.html): HTML page that displays a header and footer by using the `style` tag in the `head` tag (same as `0-index.html`)
-<h2>Requirements:</h2>
+<h3>Requirements:</h3>
 <ul>
 	<li>Use the <b>header</b> and <b>footer</b> tags</li>
 	<li>Importing any files is not allowed</li>
