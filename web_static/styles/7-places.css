@@ -1,0 +1,31 @@
+/*
+ *  Stylesheet for places section 
+ */
+
+/* heade 1 style*/
+.places h1 {
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0.68em 0 0.68em 0;
+	width: 100%;
+}
+
+/* Article style*/
+.places article {
+	width: 390px;
+	padding: 20px;
+	margin: 20px;
+	border: 1px solid #ff5a5f;
+	border-radius: 4px;
+	display: inline-block
+}
+
+/* header 2 style*/
+.places h2 {
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	--webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
