@@ -13,3 +13,8 @@ body {
 	max-width: 1000px;
 	margin: 30px auto;
 }
+
+/* Strong style*/
+strong {
+	font-weight: bold;
+}
